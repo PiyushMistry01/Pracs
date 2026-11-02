@@ -1,0 +1,8 @@
+//if sir gives ds
+
+import pandas as pd
+
+data = pd.read_csv("emails.csv")
+
+X = data[['suspicious_words', 'links']]
+y = data['spam']
